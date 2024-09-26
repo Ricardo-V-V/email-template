@@ -71,6 +71,9 @@
 				.height-mobile {
 					height: 250px !important;
 				}
+				.btn-primary {
+					background-color: #fc808f !important;
+				}
 			}
 
 			@media (prefers-color-scheme: dark) {
@@ -270,7 +273,15 @@
 											role="presentation"
 										>
 											<tr>
-												<td style="border-radius: 12px" bgcolor="#fc808f">
+												<td
+													class="btn-primary"
+													style="
+														border-radius: 12px;
+														padding: 8px 24px;
+														background-color: #fc808f;
+													"
+													bgcolor="#fc808f"
+												>
 													<a
 														href="https://example.com"
 														target="_blank"
@@ -279,13 +290,14 @@
 															text-decoration: none;
 															color: #ffffff;
 															background-color: #fc808f;
-															border-radius: 12px;
-															padding: 8px 24px;
 															display: inline-block;
 														"
 														>Read more</a
 													>
 												</td>
+											</tr>
+											<tr>
+												<td style="font-size: 0; line-height: 0.1pt">&nbsp;</td>
 											</tr>
 										</table>
 										<!-- END CTA BUTTON -->
@@ -779,7 +791,12 @@
 																>
 																	<tr>
 																		<td
-																			style="border-radius: 12px"
+																			class="btn-primary"
+																			style="
+																				border-radius: 12px;
+																				padding: 8px 24px;
+																				background-color: #fc808f;
+																			"
 																			bgcolor="#fc808f"
 																		>
 																			<a
@@ -790,13 +807,10 @@
 																					text-decoration: none;
 																					color: #ffffff;
 																					background-color: #fc808f;
-																					border-radius: 12px;
-																					padding: 8px 24px;
 																					display: inline-block;
 																				"
 																				>Read more</a
 																			>
-																			&gt;
 																		</td>
 																	</tr>
 																</table>
