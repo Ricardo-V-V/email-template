@@ -10,12 +10,15 @@
 		<title>HTML Email Template Project</title>
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 			.ExternalClass {
 				width: 100%;
 			}
+
 			.ExternalClass * {
 				line-height: 100%;
 			}
+
 			table {
 				border-spacing: 0;
 				table-layout: fixed;
@@ -26,8 +29,42 @@
 			td {
 				padding: 0;
 			}
+
 			p {
 				font-size: 16px;
+			}
+
+			img {
+				display: block;
+				border: 0px;
+				height: auto;
+				line-height: 100%;
+				outline: none;
+				-ms-interpolation-mode: bicubic;
+			}
+			@media screen and (max-width: 479px) {
+				.padding-mobile {
+					padding-left: 20px !important;
+					padding-right: 20px !important;
+				}
+				.two-columns,
+				.padding {
+					padding-right: 0 !important;
+					padding-left: 0 !important;
+				}
+				img.two-col-img {
+					width: 100% !important;
+					max-width: 100% !important;
+				}
+				.column {
+					max-width: 100% !important;
+				}
+				.column-img-mobile {
+					width: 479px !important;
+				}
+				.height-mobile {
+					height: 250px !important;
+				}
 			}
 		</style>
 		<!--[if (gte mso 9)|(IE)]>
@@ -55,6 +92,7 @@
 			</noscript>
 		<![endif]-->
 	</head>
+
 	<body
 		style="margin: 0; padding: 0; min-width: 100%; background-color: #f3f3f3"
 	>
@@ -167,10 +205,12 @@
 									background-color: #ffffff;
 									color: #565656;
 								"
-								role="presentation"
 							>
 								<tr>
-									<td style="padding: 40px; text-align: center">
+									<td
+										class="padding-mobile"
+										style="padding: 40px; text-align: center"
+									>
 										<span
 											style="font-weight: 600; color: #fc808f; font-size: 20px"
 											>Fashion</span
@@ -299,6 +339,7 @@
 													>
 														<tr>
 															<td
+																class="column-img-mobile"
 																background="/img/img2.jpg"
 																width="300"
 																height="380"
@@ -362,7 +403,7 @@
 																		"
 																		>Read more</a
 																	>
-																	>
+																	&gt;
 																</p>
 															</td>
 														</tr>
@@ -428,7 +469,6 @@
 									background-color: #dfe0f2;
 									color: #40425b;
 								"
-								role="presentation"
 							>
 								<tr>
 									<td style="padding: 30px; text-align: center">
@@ -561,10 +601,9 @@
 								role="presentation"
 								width="100%"
 								style="border-spacing: 0; color: #565656"
-								role="presentation"
 							>
 								<tr>
-									<td style="padding: 0px">
+									<td class="padding-mobile" style="padding: 0px">
 										<span
 											style="font-weight: 600; color: #fc808f; font-size: 20px"
 											>Tutorial</span
@@ -579,7 +618,7 @@
 												line-height: 48px;
 											"
 										>
-											Cute and fun</br>make up tutorial for you
+											Cute and fun<br />make up tutorial for you
 										</p>
 										<p style="margin-bottom: 0px">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -625,6 +664,271 @@
 						</td>
 					</tr>
 					<!--END SPACER-->
+					<!-- START TWO COLUMNS -->
+					<tr>
+						<td style="padding: 0">
+							<table width="100%" style="border-spacing: 0" role="presentation">
+								<tr>
+									<td
+										class="two-columns"
+										style="padding: 0; font-size: 0; text-align: center"
+									>
+										<!--[if (gte mso 9)|(IE)]>
+                           <table width="100%" style="border-spacing: 0;" role="presentation">
+                           <tr>
+                           <td width="300" valign="top" style="padding: 0;">
+                        <![endif]-->
+
+										<table
+											class="column"
+											style="
+												border-spacing: 0;
+												vertical-align: top;
+												width: 100%;
+												max-width: 300px;
+												display: inline-block;
+											"
+											role="presentation"
+										>
+											<tr>
+												<td
+													class="two-columns"
+													style="padding: 0px 15px 0px 0px"
+												>
+													<table
+														style="border-spacing: 0; text-align: left"
+														role="presentation"
+													>
+														<tr>
+															<td>
+																<a href="https://example.com" target="_blank"
+																	><img
+																		class="two-col-img"
+																		src="/img/img1.jpg"
+																		alt=""
+																		width="285"
+																		style="max-width: 285px"
+																		border="0"
+																/></a>
+															</td>
+														</tr>
+														<tr>
+															<td
+																style="padding: 24px; background-color: #ffffff"
+															>
+																<p
+																	style="
+																		font-size: 24px;
+																		font-weight: 600;
+																		margin-top: 0px;
+																		margin-bottom: 16px;
+																		color: #40425b;
+																		line-height: 32px;
+																	"
+																>
+																	DIY
+																</p>
+																<p style="margin-bottom: 0px">
+																	Lorem ipsum dolor sit amet, consectetur.
+																</p>
+																<div style="height: 32px; font-size: 22px">
+																	&nbsp;
+																</div>
+																<!-- CTA BUTTON -->
+																<table
+																	align="center"
+																	border="0"
+																	cellpadding="0"
+																	style="border-spacing: 0"
+																	role="presentation"
+																>
+																	<tr>
+																		<td
+																			style="border-radius: 12px"
+																			bgcolor="#fc808f"
+																		>
+																			<a
+																				href="https://example.com"
+																				target="_blank"
+																				style="
+																					font-size: 18px;
+																					text-decoration: none;
+																					color: #ffffff;
+																					background-color: #fc808f;
+																					border-radius: 12px;
+																					padding: 8px 24px;
+																					display: inline-block;
+																				"
+																				>Read more</a
+																			>
+																			&gt;
+																		</td>
+																	</tr>
+																</table>
+																<!-- END CTA BUTTON -->
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<!--[if (gte mso 9)|(IE)]>
+                        </td><td width="300" valign="top" style="padding: 0;">
+                      <![endif]-->
+										<table
+											class="column"
+											style="
+												border-spacing: 0;
+												vertical-align: top;
+												width: 100%;
+												max-width: 300px;
+												display: inline-block;
+											"
+											role="presentation"
+										>
+											<tr>
+												<td class="padding" style="padding: 0px 0px 0px 15px">
+													<table
+														style="border-spacing: 0; text-align: left"
+														role="presentation"
+													>
+														<tr>
+															<td
+																class="height-mobile"
+																height="386.75px"
+																valign="top"
+																style="padding: 24px; background-color: #fde7ae"
+															>
+																<span
+																	style="
+																		font-weight: 600;
+																		color: #fc808f;
+																		font-size: 18px;
+																	"
+																	>Tips</span
+																>
+																<p
+																	style="
+																		font-size: 24px;
+																		font-weight: 600;
+																		margin-top: 8px;
+																		margin-bottom: 16px;
+																		color: #40425b;
+																		line-height: 32px;
+																	"
+																>
+																	Enchance your looks using this simple make up
+																	tricks
+																</p>
+																<p style="margin-bottom: 0px">
+																	Lorem ipsum dolor sit amet, consectetur
+																	adipiscing elit, sed do eiusmod tempor
+																	incididunt.
+																</p>
+																<p style="font-size: 18px; font-weight: 600">
+																	<a
+																		href="https://example.com"
+																		target="_blank"
+																		style="
+																			text-decoration: none;
+																			color: #565656;
+																			padding-bottom: 2px;
+																			border-bottom: 1px solid #565656;
+																		"
+																		>Read more</a
+																	>
+																	&gt;
+																</p>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+
+										<!--[if (gte mso 9)|(IE)]>
+                           </td>
+                           </tr>
+                           </table>
+                        <![endif]-->
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!-- END TWO COLUMNS -->
+					<!--SPACER-->
+					<tr>
+						<td style="padding: 0">
+							<div style="margin: 0 auto; max-width: 600px">
+								<!--[if (gte mso 9)|(IE)]>
+                  <table role="presentation" width="600" align="center" style="border-spacing: 0; color: #565656;">
+                    <tr>
+                      <td style="padding:0;">
+                <![endif]-->
+								<table align="center" style="width: 100%" role="presentation">
+									<tr>
+										<td style="padding: 0">
+											<table
+												align="center"
+												width="100%"
+												style="border-spacing: 0"
+												role="presentation"
+											>
+												<tr>
+													<td height="80"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!--[if (gte mso 9)|(IE)]>
+                      </td>
+                    </tr>
+                  </table>
+                <![endif]-->
+							</div>
+						</td>
+					</tr>
+					<!--END SPACER-->
+					<!-- START FOOTER -->
+					<tr>
+						<td style="padding: 0">
+							<table width="100%" style="border-spacing: 0" role="presentation">
+								<tr>
+									<td
+										class="padding-mobile"
+										style="padding: 0 40px; text-align: center; font-size: 12px"
+									>
+										<p style="margin-bottom: 16px; margin-top: 0px">
+											Blogy<br />123 Street Road, City, State 55555
+											<br />
+											<a
+												href="mailto:email@example.com"
+												style="text-decoration: none; color: #565656"
+												>email@example.com</a
+											>
+											<br />1-800-888-8888
+										</p>
+										<p style="margin-bottom: 0px">
+											<a
+												href="https://example.com"
+												style="text-decoration: none; color: #565656"
+												>Unsubscribe</a
+											>
+											&nbsp;|&nbsp;
+											<a
+												href="https://example.com"
+												style="text-decoration: none; color: #565656"
+												>Change Preferences</a
+											>
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!-- END FOOTER -->
 				</table>
 			</div>
 		</center>
