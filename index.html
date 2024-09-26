@@ -42,30 +42,37 @@
 				outline: none;
 				-ms-interpolation-mode: bicubic;
 			}
+
 			@media screen and (max-width: 479px) {
 				.padding-mobile {
 					padding-left: 20px !important;
 					padding-right: 20px !important;
 				}
+
 				.two-columns,
 				.padding {
 					padding-right: 0 !important;
 					padding-left: 0 !important;
 				}
+
 				img.two-col-img {
 					width: 100% !important;
 					max-width: 100% !important;
 				}
+
 				.column {
 					max-width: 100% !important;
 				}
+
 				.column-img-mobile {
 					width: 479px !important;
 				}
+
 				.height-mobile {
 					height: 250px !important;
 				}
 			}
+
 			@media (prefers-color-scheme: dark) {
 				body,
 				center,
@@ -74,6 +81,7 @@
 				td {
 					background-color: #111111 !important;
 				}
+
 				h1,
 				h2,
 				h3,
@@ -354,13 +362,18 @@
 														role="presentation"
 													>
 														<tr>
-															<td
-																class="column-img-mobile"
-																background="https://ricardo-v-v.github.io/email-template/img/img2.jpg"
-																width="300"
-																height="380"
-																style="background-position: center top"
-															></td>
+															<td height="375">
+																<a href="https://example.com" target="_blank"
+																	><img
+																		class="two-col-img"
+																		src="https://ricardo-v-v.github.io/email-template/img/img2.jpg"
+																		alt="Women smiling"
+																		title="Women smiling"
+																		width="300"
+																		max-width="300px"
+																		border="0"
+																/></a>
+															</td>
 														</tr>
 													</table>
 												</td>
@@ -390,7 +403,10 @@
 													>
 														<tr>
 															<td
-																style="padding: 40px; background-color: #fc808f"
+																style="
+																	padding: 37.5px 40px 37.5px 40px;
+																	background-color: #fc808f;
+																"
 															>
 																<h2
 																	style="
@@ -723,7 +739,8 @@
 																	><img
 																		class="two-col-img"
 																		src="https://ricardo-v-v.github.io/email-template/img/img1.jpg"
-																		alt=""
+																		alt="Women in pink dress smiling"
+																		title="Women in pink dress smiling"
 																		width="285"
 																		style="max-width: 285px"
 																		border="0"
